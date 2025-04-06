@@ -35,7 +35,7 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-10 px-4">
+    <div  dir="rtl" className="min-h-screen flex items-center justify-center bg-gray-10 px-4">
       <div className="w-full max-w-md bg-white p-8 rounded-2xl shadow-xl border border-gray-200">
         <div className="flex justify-center mb-6">
           <img src="/src/assets/logo.png" alt="Logo" className="h-12" />
