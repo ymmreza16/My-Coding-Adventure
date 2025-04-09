@@ -1,26 +1,23 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    "jsx": "react-jsx",
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "target": "ES2020",                      // هدف کامپایلر به ES2020 تنظیم شده است.
+    "useDefineForClassFields": true,          // برای استفاده از فیلدهای کلاس به صورت استاندارد ES
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // استفاده از کتابخانه‌های ES2020 و DOM
+    "module": "ESNext",                       // استفاده از ماژول ESNext
+    "moduleResolution": "Node",               // استفاده از مدل جستجو برای ماژول‌ها مانند Node
+    "skipLibCheck": true,                     // بررسی نوع فایل‌های کتابخانه را رد می‌کند
+    "allowJs": true,                          // اجازه استفاده از فایل‌های جاوا اسکریپت
+    "jsx": "react-jsx",                      // پشتیبانی از JSX در React
+    "esModuleInterop": true,                  // پشتیبانی از واردات ماژول‌ها به صورت ES6
+    "noEmit": true,                           // برای جلوگیری از تولید فایل‌های خروجی
+    "isolatedModules": true,                  // جدا کردن ماژول‌ها
+    "strict": true,                           // فعال‌سازی حالت سخت‌گیرانه
+    "noUnusedLocals": true,                   // فعال‌سازی اخطار در مورد متغیرهای بلااستفاده
+    "noUnusedParameters": true,               // اخطار در مورد پارامترهای بلااستفاده
+    "skipDefaultLibCheck": true,              // رد بررسی کتابخانه‌های پیش‌فرض
+    "resolveJsonModule": true,                // پشتیبانی از ماژول‌های JSON
+    "types": ["react", "react-dom"] // افزودن تایپ‌های مربوط به React
   },
-  "include": ["src"]
+  "include": ["src"], // مسیر پروژه برای کامپایل کد
+  "exclude": ["node_modules"] // فایل‌های خارج از پروژه (مانند node_modules) را از کامپایل خارج می‌کند
 }
