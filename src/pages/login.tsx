@@ -17,7 +17,7 @@ export default function Login() {
       }
       console.log('ثبت‌نام با موفقیت انجام شد:', email)
     } else {
-      const defaultEmail = 'example@example.com'
+      const defaultEmail = 'me@gmail.com'
       const defaultPassword = 'password123'
       if (email === defaultEmail && password === defaultPassword) {
         console.log('ورود موفقیت‌آمیز')
